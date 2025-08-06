@@ -1,2 +1,8 @@
 # All-in-document-solution-mongodb
-We want to store a whole Hygraph instance in Mongodb using its data model to store both structural and temporal data
+cat > README.md <<'MD'
+# Bike Sharing — MongoDB Test Kit (Graph + Time Series)
+Quick start:
+  docker compose up -d
+  docker compose exec mongo mongosh "mongodb://admin:changeme@localhost:27017/admin" /work/scripts/seed.js
+  docker compose exec mongo mongosh "mongodb://admin:changeme@localhost:27017/admin" /work/queries/run_samples.js
+MD
